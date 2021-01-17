@@ -5,6 +5,7 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .attribution {
@@ -20,10 +21,168 @@ body {
   max-width: 100%;
 }
 
-.p-0 {
+body {
   padding: 0;
 }
 
-body {
-  padding: 0;
+.site__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2em 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.site__logo__container {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site__logo {
+  flex: 1 0 75%;
+  max-width: 160px;
+}
+
+.site__nav--toggle {
+  cursor: pointer;
+}
+
+.site__nav {
+  flex: 1 0 100%;
+  max-width: 100%;
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.site__nav > ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.site__nav__item + .site__nav__item {
+  margin-top: 1em;
+}
+
+.site__nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hero {
+  max-width: 100%;
+  min-height: 100vh;
+  background-image: url("./images/mobile/image-hero.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5em;
+}
+
+.heading {
+  font-size: 2.5em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.text--light {
+  color: #fff;
+}
+
+.text--dark {
+  color: #333;
+}
+
+.hero__caption {
+  flex: 1 0 100%;
+  max-width: 100%;
+  border: 2px solid currentColor;
+  padding: 0.6em;
+}
+
+.interactive__vr {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6em 0;
+  padding: 0 1.5em;
+}
+
+.interactive__vr__img {
+  flex: 1 0 100%;
+  max-width: 100%;
+}
+
+.interactive__vr__body {
+  flex: 1 0 100%;
+  max-width: 100%;
+  margin: 3em 0 0;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.interactive__vr__heading {
+  margin-bottom: 1.5rem;
+}
+
+.creations {
+  padding: 0 1.5em;
+}
+
+.creation {
+  position: relative;
+}
+
+.creations__heading {
+  margin-bottom: 3rem;
+}
+
+.creation__heading {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 0.8em;
+  left: 0.8em;
+  z-index: +1;
+}
+
+.creation + .creation {
+  margin-top: 1.5em;
+}
+
+.creation__image > img,
+.creation__imag > source {
+  max-width: 100%;
+  filter: brightness(75%);
+}
+
+@media screen and (min-width: 760px) {
+  .hero {
+    background-image: url("./images/desktop/image-hero.jpg");
+    justify-content: flex-start;
+    padding-left: 10em;
+  }
+
+  .hero__caption {
+    max-width: 25%;
+    font-size: 2.5em;
+  }
 }

@@ -1,5 +1,7 @@
 # Frontend Mentor - Loopstudios landing page
 
+You can find the live version of this project [here](https://loopstudios.vercel.app/)
+
 ![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
