@@ -39,6 +39,10 @@ body {
   z-index: 9999;
 }
 
+.site__header--dark {
+  background-color: hsl(0, 0%, 0%);
+}
+
 .site__logo__container {
   flex: 0 0 100%;
   display: flex;
